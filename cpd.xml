@@ -1,0 +1,6 @@
+<target name="phpcpd">
+		<exec executable="phpcpd" >
+			<arg line="--log-pmd ${output}/cpd/phpcpd.xml 
+						${src}/controllers/" />
+		</exec>
+	</target>

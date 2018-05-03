@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="2.9.1">
+<file name="/root/index.php">
+ <error line="2" column="1" severity="error" message="You must use &quot;/**&quot; style comments for a file comment" source="PEAR.Commenting.FileComment.WrongStyle"/>
+ <error line="3" column="1" severity="error" message="Expected &quot;if (...) {\n&quot;; found &quot;if(...){&quot;" source="PEAR.ControlStructures.ControlSignature.Found"/>
+ <error line="3" column="44" severity="error" message="There must be a single space between the closing parenthesis and the opening brace of a multi-line IF statement; found 0 spaces" source="PEAR.ControlStructures.MultiLineCondition.SpaceBeforeOpenBrace"/>
+ <error line="3" column="61" severity="error" message="Closing brace must be on a line by itself" source="PEAR.WhiteSpace.ScopeClosingBrace.Line"/>
+ <error line="29" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="33" column="11" severity="error" message="Line indented incorrectly; expected 12 spaces, found 10" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="34" column="11" severity="error" message="Line indented incorrectly; expected 12 spaces, found 10" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="34" column="11" severity="error" message="Expected &quot;if (...) {\n&quot;; found &quot;if(...){\n&quot;" source="PEAR.ControlStructures.ControlSignature.Found"/>
+ <error line="34" column="43" severity="error" message="There must be a single space between the closing parenthesis and the opening brace of a multi-line IF statement; found 0 spaces" source="PEAR.ControlStructures.MultiLineCondition.SpaceBeforeOpenBrace"/>
+ <error line="35" column="13" severity="error" message="Line indented incorrectly; expected at least 16 spaces, found 12" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="36" column="13" severity="error" message="Line indented incorrectly; expected at least 16 spaces, found 12" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="37" column="11" severity="error" message="Line indented incorrectly; expected 12 spaces, found 10" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="38" column="11" severity="error" message="Line indented incorrectly; expected 12 spaces, found 10" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="38" column="11" severity="error" message="Expected &quot;} else {\n&quot;; found &quot;}\n          else{\n&quot;" source="PEAR.ControlStructures.ControlSignature.Found"/>
+ <error line="39" column="13" severity="error" message="Line indented incorrectly; expected at least 16 spaces, found 12" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="40" column="13" severity="error" message="Line indented incorrectly; expected at least 16 spaces, found 12" source="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="41" column="11" severity="error" message="Line indented incorrectly; expected 12 spaces, found 10" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="42" column="11" severity="error" message="Line indented incorrectly; expected 12 spaces, found 10" source="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="50" column="1" severity="warning" message="Line exceeds 85 characters; contains 176 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="58" column="1" severity="warning" message="Line exceeds 85 characters; contains 124 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+</checkstyle>
