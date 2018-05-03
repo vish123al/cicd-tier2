@@ -21,7 +21,7 @@ COPY insert.php /var/www/html/
 COPY login.php /var/www/html/
 COPY logout.php /var/www/html/
 COPY orders.php /var/www/html/
-
+COPY products.php /var/www/html/
 COPY orders-update.php /var/www/html/
 COPY register.php /var/www/html/
 COPY robots.txt /var/www/html/
