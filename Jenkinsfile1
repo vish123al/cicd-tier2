@@ -5,7 +5,7 @@
     //return gitCommit
 //}
 import java.text.SimpleDateFormat
-jobName = "blog"
+jobName = "WebApp"
 def dateFormat = new SimpleDateFormat("yyyyMMddHHmm")
 def date = new Date()
 def timestamp = dateFormat.format(date).toString()
@@ -25,10 +25,10 @@ node {
     sh 'curl -X POST -H "Content-Type: application/json" http://172.29.133.15:8080/v2/apps -d@msql.json'
     //sh 'make test'
     stage '(BUILD) building image'
-    sh "docker build -t vishaldenge/php10:${jobName}${timestamp} ."
-    sh "docker login -u vishaldenge -p 'v!sh@l123' "
+    sh "docker build -t dev.artifactory01.hds.local/php:7.0-apache:${jobName}${timestamp} ."
+    sh "docker login -u admin -p 'Hitachi1' "
     stage '(PUBLISH) Pushing the image '
-    sh "docker push vishaldenge/php10:${jobName}${timestamp}"
+    sh "docker push dev.artifactory01.hds.local/php:7.0-apache:${jobName}${timestamp}"
      stage '(DEPLOY) Deploying the container'
      //sh 'curl -X POST -H "Content-Type: application/json" http://mesomaster02.production.hec.local:8080/v2/groups -d@marathon2.json'
    // sh 'curl -X POST -H "Content-Type: application/json" http://10.0.1.85:8080/v2/apps -d@marathon.json'
@@ -38,7 +38,7 @@ node {
       forceUpdate: true,
        filename: 'marathon.json',
         appId: 'blog',
-        docker: "vishaldenge/php10:${jobName}${timestamp}".toString()
+        docker: "dev.artifactory01.hds.local/php:7.0-apache:${jobName}${timestamp}".toString()
     )
    
         stage 'Collect test reports'
