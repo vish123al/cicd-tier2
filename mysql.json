@@ -1,5 +1,5 @@
 {
-  "id": "/webapp/mysql",
+  "id": "/newapp/mysql",
   "cmd": null,
   "cpus": 1,
   "mem": 1024,
