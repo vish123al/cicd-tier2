@@ -9,7 +9,7 @@
     "type": "DOCKER",
     "volumes": [],
     "docker": {
-      "image": "dev.artifactory01.hds.local/php:7.0-apache",
+      "image": "vdenge/php10",
       "network": "BRIDGE",
       "portMappings": [
         {
