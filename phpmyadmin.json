@@ -30,7 +30,7 @@
     "MYSQL_PORT_3306_TCP_PORT": "3306"
   },
   "labels": {
-    "HAPROXY_0_VHOST": "<provide_your_private_ip>"
+    "HAPROXY_0_VHOST": "<provide_your_agent_node_private_ip>"
   },
   "networks": [
     {
