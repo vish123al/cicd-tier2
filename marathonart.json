@@ -1,0 +1,46 @@
+{
+  "id": "/newapp/webapp",
+  "cmd": null,
+  "cpus": 1,
+  "mem": 128,
+  "disk": 0,
+  "instances": 1,
+  "container": {
+    "type": "DOCKER",
+    "volumes": [],
+    "docker": {
+      "image": "dev.artifactory01.hds.local/php:7.0-apache",
+      "network": "BRIDGE",
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 10000,
+          "servicePort": 10113,
+          "protocol": "tcp",
+          "name": "http",
+          "labels": {}
+        }
+      ],
+      "privileged": false,
+      "parameters": [],
+      "forcePullImage": false
+    }
+  },
+  "env": {
+    "DB_HOST": "3.3.0.6:3306",
+    "DB_USER": "wordpress",
+    "DB_PASSWORD": "secret",
+    "DB_NAME": "myapp"
+  },
+  "labels": {
+    "HAPROXY_0_VHOST": "<provide_your_private_agent04_ip>"
+  },
+  "portDefinitions": [
+    {
+      "port": 10113,
+      "protocol": "tcp",
+      "name": "default",
+      "labels": {}
+    }
+  ]
+}
