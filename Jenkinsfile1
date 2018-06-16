@@ -36,7 +36,7 @@ node {
    marathon(
      url: 'http://172.29.133.15:8080',
       forceUpdate: true,
-       filename: 'marathon.json',
+       filename: 'marathonart.json',
         appId: 'blog',
         docker: "dev.artifactory01.hds.local/php:${jobName}${timestamp}".toString()
     )
