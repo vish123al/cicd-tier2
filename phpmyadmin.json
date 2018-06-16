@@ -17,7 +17,7 @@
     "portMappings": [
       {
         "containerPort": 80,
-        "hostPort": 0,
+        "hostPort": 10000,
         "labels": {},
         "protocol": "tcp",
         "servicePort": 8090
@@ -28,6 +28,9 @@
     "MYSQL_USERNAME": "root",
     "MYSQL_PORT_3306_TCP_ADDR": "3.3.0.6",
     "MYSQL_PORT_3306_TCP_PORT": "3306"
+  },
+  "labels": {
+    "HAPROXY_0_VHOST": "<provide_your_private_ip>"
   },
   "networks": [
     {
